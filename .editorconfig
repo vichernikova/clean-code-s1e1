@@ -1,0 +1,25 @@
+
+root = true
+
+[*]
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#charset
+charset = utf-8
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#indent_style
+indent_style = space
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#indent_size
+indent_size = 2
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#tab_width
+tab_width = 2
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#trim_trailing_whitespace
+trim_trailing_whitespace = true
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#insert_final_newline
+insert_final_newline = true
+
+# https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties#end_of_line
+end_of_line = lf
