@@ -1,9 +1,12 @@
+/* BODY */
 
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
+/* HEADER */
 
 .header {
   width: 500px;
@@ -28,46 +31,15 @@
 
 }
 
+/* MAIN */
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
-.task-wrapper {
-  display: flex;
-}
-
-.todo-group {
-  margin: 0;
-  padding: 0px;
-}
-
-.task-input,
-.check-input,
-.btn-primary {
-  outline: none;
-}
-
-.btn-primary {
-  background: none;
-  border: 0px;
-  color: #888;
-  font-size: 15px;
-  width: 60px;
-  font-family: Lato, sans-serif;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  color: #3a3a3a;
-}
+/* TITLE */
 
 .title {
   display: block;
@@ -79,6 +51,14 @@
   padding: 30px 0 10px;
   text-transform: uppercase;
 }
+
+/* TASK WRAPPER */
+
+.task-wrapper {
+  display: flex;
+}
+
+/* TASK INPUT */
 
 .task-input {
   flex-grow: 1;
@@ -102,6 +82,15 @@
   width: 318px;
 }
 
+/* TODO GROUP */
+
+.todo-group {
+  margin: 0;
+  padding: 0px;
+}
+
+/* TODO ITEM */
+
 .todo-item {
   overflow: hidden;
   padding: 20px 0;
@@ -115,10 +104,6 @@
   vertical-align: middle;
 }
 
-.check-input {
-  margin: 0 10px;
-}
-
 .todo-item > .task {
   padding-left: 10px;
   box-sizing: border-box;
@@ -128,6 +113,26 @@
 
 .todo-item > .task-input {
   width: 226px;
+}
+
+.todo-item .task-input {
+  display: none;
+}
+
+/* BUTTON */
+
+.btn-primary {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  color: #3a3a3a;
 }
 
 .btn-primary.delete img {
@@ -140,13 +145,30 @@
   transform: rotateZ(0);
 }
 
+
+/* LABEL */
+
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+/* INPUT */
+
+.task-input,
+.check-input,
+.btn-primary {
+  outline: none;
+}
+
+.check-input {
+  margin: 0 10px;
+}
+
 .completed .todo-item > .task {
   text-decoration: line-through;
   color: #888;
-}
-
-.todo-item .task-input {
-  display: none;
 }
 
 .editMode > .task-input {
