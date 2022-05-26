@@ -130,13 +130,13 @@
   width: 226px;
 }
 
-btn-primary.delete img {
+.btn-primary.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-btn-primary.delete img:hover {
+.btn-primary.delete img:hover {
   transform: rotateZ(0);
 }
 
