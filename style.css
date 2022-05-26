@@ -140,7 +140,7 @@
   transform: rotateZ(0);
 }
 
-.todo-group#completed-tasks label {
+.completed .todo-item > .task {
   text-decoration: line-through;
   color: #888;
 }
