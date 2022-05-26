@@ -49,7 +49,8 @@
   padding: 0px;
 }
 
-input,
+.task-input,
+.check-input,
 .btn-primary {
   outline: none;
 }
@@ -79,7 +80,8 @@ input,
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.task-input {
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -92,12 +94,11 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.task-input:focus {
   color: #333;
 }
 
-/* TODO */
-input#new-task {
+.add-item-input {
   width: 318px;
 }
 
@@ -105,7 +106,6 @@ input#new-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,28 +115,28 @@ input#new-task {
   vertical-align: middle;
 }
 
-.todo-item > input[type="checkbox"] {
+.check-input {
   margin: 0 10px;
 }
 
-.todo-item > label {
+.todo-item > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todo-item >  input[type="text"] {
+.todo-item > .task-input {
   width: 226px;
 }
 
-button.delete img {
+btn-primary.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+btn-primary.delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -145,15 +145,15 @@ button.delete img:hover {
   color: #888;
 }
 
-.todo-group .todo-item input[type="text"] {
+.todo-item .task-input {
   display: none;
 }
 
-.todo-group .todo-item .editMode input[type="text"] {
+.editMode > .task-input {
   display: inline-block;
   width: 224px;
 }
 
-.todo-group .todo-item .editMode label {
+.editMode > .task {
   display: none;
 }

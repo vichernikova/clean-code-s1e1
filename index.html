@@ -16,27 +16,26 @@
         <section class="add-item">
             <h3 class="title">Add Item</h3>
             <div class="task-wrapper">
-              <input id="new-task" class="task" type="text"> <!--TODO-->
+              <input id="new-task" class="task-input add-item-input" type="text">
               <button class="btn-primary">Add</button>
             </div>
         </section>
 
         <section class="todo">
           <h3 class="title">Todo</h3>
-          <!--TODO <ul id="incompleteTasks">-->
-            <div class="todo-group">
+            <div class="todo-group" id="incompleteTasks">
               <div class="todo-item">
-                <input type="checkbox">
+                <input class="check-input" type="checkbox">
                 <label class="task">Pay Bills</label>
-                <input type="text" class="task">
+                <input type="text" class="task-input">
                 <button class="btn-primary edit">Edit</button>
                 <button class="btn-primary delete"><img src="./remove.svg"></button>
               </div>
 
             <div class="todo-item editMode">
-              <input type="checkbox">
+              <input class="check-input" type="checkbox">
               <label class="task">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task">
+              <input type="text" value="Go Shopping" class="task-input">
               <button class="btn-primary edit">Save</button>
               <button class="btn-primary delete"><img src="./remove.svg"></button>
             </div>
@@ -45,11 +44,10 @@
 
         <section class="completed">
           <h3 class="title">Completed</h3>
-          <!--TODO<ul id="completed-tasks">-->
-            <div class="todo-item">
-              <input type="checkbox" checked>
+            <div class="todo-item" id="completed-tasks">
+              <input class="check-input" type="checkbox" checked>
               <label class="task">See the Doctor</label>
-              <input type="text" class="task">
+              <input type="text" class="task-input">
               <button class="btn-primary edit">Edit</button>
               <button class="btn-primary delete"><img src="./remove.svg"></button>
             </div>
