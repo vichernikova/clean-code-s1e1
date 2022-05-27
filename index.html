@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
@@ -13,46 +16,46 @@
     </header>
 
     <main class="main">
-        <section class="add-item">
-            <h3 class="title">Add Item</h3>
-            <div class="task-wrapper">
-              <input id="new-task" class="task-input add-item-input" type="text">
-              <button class="btn-primary">Add</button>
-            </div>
-        </section>
-
-        <section class="todo">
-          <h3 class="title">Todo</h3>
-            <div class="todo-group" id="incompleteTasks">
-              <div class="todo-item">
-                <input class="check-input" type="checkbox">
-                <label class="task">Pay Bills</label>
-                <input type="text" class="task-input">
-                <button class="btn-primary edit">Edit</button>
-                <button class="btn-primary delete"><img src="./remove.svg" alt="button delete"></button>
-              </div>
-
-            <div class="todo-item editMode">
-              <input class="check-input" type="checkbox">
-              <label class="task">Go Shopping</label>
-              <input type="text" value="Go Shopping" class="task-input">
-              <button class="btn-primary edit">Save</button>
-              <button class="btn-primary delete"><img src="./remove.svg" alt="button delete"></button>
-            </div>
+      <section class="add-item">
+          <label for="new-task">Add Item</label>
+          <div class="task-wrapper">
+            <input type="text" id="new-task" class="task-input add-item-input">
+            <button class="btn-primary">Add</button>
           </div>
-        </section>
+      </section>
 
-        <section class="completed">
-          <h3 class="title">Completed</h3>
-            <div class="todo-item" id="completed-tasks">
-            <input class="check-input" type="checkbox" checked>
-              <label class="task">See the Doctor</label>
-              <input type="text" class="task-input">
-              <button class="btn-primary edit">Edit</button>
-              <button class="btn-primary delete"><img src="./remove.svg" alt="button delete"></button>
-            </div>
-        </section>
+      <section class="todo">
+        <h3 class="title">Todo</h3>
+        <div class="todo-group" id="incompleteTasks">
+          <div class="todo-item">
+            <input class="check-input" type="checkbox">
+            <label class="task">Pay Bills</label>
+            <input type="text" class="task-input">
+            <button class="btn-primary edit">Edit</button>
+            <button class="btn-primary delete"><img src="./remove.svg" alt="button delete"></button>
+          </div>
+          <div class="todo-item editMode">
+            <input class="check-input" type="checkbox">
+            <label class="task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task-input">
+            <button class="btn-primary edit">Save</button>
+            <button class="btn-primary delete"><img src="./remove.svg" alt="button delete"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="completed">
+        <h3 class="title">Completed</h3>
+        <div class="todo-item" id="completed-tasks">
+          <input class="check-input" type="checkbox" checked>
+          <label class="task">See the Doctor</label>
+          <input type="text" class="task-input">
+          <button class="btn-primary edit">Edit</button>
+          <button class="btn-primary delete"><img src="./remove.svg" alt="button delete"></button>
+        </div>
+      </section>
     </main>
+
     <script src="app.js"></script>
   </body>
 </html>
