@@ -84,7 +84,8 @@
 
 /* TODO GROUP */
 
-.todo-group {
+.todo-group,
+.completed-group {
   margin: 0;
   padding: 0px;
 }
@@ -145,7 +146,6 @@
   transform: rotateZ(0);
 }
 
-
 /* LABEL */
 
 .task {
@@ -171,11 +171,11 @@
   color: #888;
 }
 
-.editMode > .task-input {
+.edit-mode > .task-input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode > .task {
+.edit-mode > .task {
   display: none;
 }
