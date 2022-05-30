@@ -15,20 +15,20 @@
   text-align: right;
 }
 
-.header img {
-  width: 100%;
-}
-
-.header-link {
-  font-family: fantasy, cursive;
-}
-
 @media (max-width:768px) {
 
 .header {
   text-align: center;
 }
 
+}
+
+.header img {
+  width: 100%;
+}
+
+.header-link {
+  font-family: fantasy, cursive;
 }
 
 /* MAIN */
@@ -105,19 +105,16 @@
   vertical-align: middle;
 }
 
-.todo-item > .task {
+.todo-item .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.todo-item > .task-input {
-  width: 226px;
-}
-
 .todo-item .task-input {
   display: none;
+  width: 226px;
 }
 
 /* BUTTON */
@@ -154,6 +151,15 @@
   flex-grow: 1;
 }
 
+.edit-mode > .task {
+  display: none;
+}
+
+.completed .todo-item .task {
+  text-decoration: line-through;
+  color: #888;
+}
+
 /* INPUT */
 
 .task-input,
@@ -166,16 +172,7 @@
   margin: 0 10px;
 }
 
-.completed .todo-item > .task {
-  text-decoration: line-through;
-  color: #888;
-}
-
-.edit-mode > .task-input {
+.edit-mode .task-input {
   display: inline-block;
   width: 224px;
-}
-
-.edit-mode > .task {
-  display: none;
 }
