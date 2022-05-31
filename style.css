@@ -23,7 +23,7 @@
 
 }
 
-.header img {
+.header-img {
   width: 100%;
 }
 
@@ -133,13 +133,13 @@
   color: #3a3a3a;
 }
 
-.btn-primary.delete img {
+.btn-primary-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.btn-primary.delete img:hover {
+.btn-primary-img:hover {
   transform: rotateZ(0);
 }
 
